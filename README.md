@@ -1,4 +1,4 @@
-ea-finland
-==========
+ea-finland-web-site
+===================
 
-Website for Effective Altruism Finland
+The web site of Effective Altruism Finland
