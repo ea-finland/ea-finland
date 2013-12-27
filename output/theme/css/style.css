@@ -183,7 +183,7 @@ body.color-4::selection {background: #34495e; color: #fff; }
 body.color-4 a{
 	color: #34495e;
 	text-decoration: none;
-	border-bottom: 1px solid #34495e;
+/* 	border-bottom: 1px solid #34495e; */
 }
 body.color-4 div#top-nav #fixed-nav li a:hover {
 	color: #34495e;
@@ -431,15 +431,32 @@ hr.grey {
 #contact .social a{
 	margin-right: 10px;
 	font-size: 14px;
-/*	float: left; */
 	border: none;
+
 }
 
 /* Section, Footer & Misc ------------------------------------------ */
+a.clicker{ color: #000000 !important; }
+
 .content{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
+.blognav{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.blognav a{color: #000000 !important;}
+
+.blogpost{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.blogpost p{ 	font-size: 16px; }
+
 .section{
 	border-bottom: 1px solid #e1e1e1;
 }
@@ -459,9 +476,9 @@ hr.grey {
 }
 .title p{
 	letter-spacing: 1px;
-line-height: 1.6em;
-font-size: 20px;
-margin: 0px;
+	line-height: 1.6em;
+	font-size: 20px;
+	margin: 0px;
 }
 .text-center{
 	text-align: center;
