@@ -11,7 +11,7 @@ RELATIVE_URLS = True
 TIMEZONE = 'Europe/Helsinki'
 DEFAULT_LANG = u'fi'
 
-THEME = "themes\ea-finland"
+THEME = "themes\ea-finland-theme"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
