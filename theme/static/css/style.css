@@ -436,6 +436,40 @@ hr.grey {
 }
 
 /* Section, Footer & Misc ------------------------------------------ */
+ul {
+	list-style: outside disc;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+code{
+    border:1px solid #eaeaea;
+    background-color:#f8f8f8;
+    font-size:11px;
+    font-style:normal;
+    color:#777;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    padding-left:3px;
+    padding-right:3px;
+    padding-bottom:0px;
+    font-weight:normal;
+    font-family: monospace;
+}
+pre {
+    line-height: 135%;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding-left: 6px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 a.clicker{ color: #000000 !important; }
 
 .content{
