@@ -22,7 +22,7 @@ TRANSLATION_FEED_ATOM = None
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}.html'
 
-STATIC_PATHS = ["robots.txt",]
+STATIC_PATHS = ["robots.txt","logo.png",]
 
 SUMMARY_MAX_LENGTH = 30
 
