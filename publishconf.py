@@ -16,7 +16,3 @@ RELATIVE_URLS = False
 
 #OUTPUT_PATH = github or something
 
-# Following items are often useful when publishing
-
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
