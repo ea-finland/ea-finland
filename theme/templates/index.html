@@ -54,19 +54,26 @@
 		<div class="container">
 			<div class="content">
 				<div class="row">
-					<div class="span12">
+					<div class="span7 center">
+						
 						<div class="title">
 							<h2>Mitä?</h2>
 							<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-							<p>Effective altruism is about applying evidence and reason to work out the most effective ways to improve the world. Paitsi suomeks. </p>
-
 						</div>
-						<p class="text-center">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam. Quisque non feugiat erat. Mauris tristique id sem in blandit. Vestibulum pretium convallis orci. Suspendisse in aliquet leo. Donec ultricies fringilla augue, nec accumsan leo euismod et. Quisque non nisl non augue cursus rhoncus vel eget sem. Phasellus sed gravida nisi, ac lacinia dui. Aliquam pretium dapibus orci sed placerat. Nunc in condimentum massa, vitae consectetur ligula. Maecenas consequat in diam ut vulputate. Aenean vel ullamcorper elit.
+						<p>
+							Efektiivinen altruismi lähtee tavoitteesta tehdä maailmasta paras mahdollinen, aloittaen teoilla joilla on suurin vaikutus. Sen sijaan, että tyytyisimme hyväntekeväisyyteen joka tekee hyvää työtä, tahdomme löytää ne kohteet ja keinot, jotka tekevät eniten auttaakseen maailmaa. Tehokas hyväntekeväisyys tuottaa eniten vastiketta rahoillemme ja ajallemme. 
 						</p>
-						<p class="text-center">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam. Quisque non feugiat erat. Mauris tristique id sem in blandit. Vestibulum pretium convallis orci. Suspendisse in aliquet leo. Donec ultricies fringilla augue, nec accumsan leo euismod et. Quisque non nisl non augue cursus rhoncus vel eget sem. Phasellus sed gravida nisi, ac lacinia dui. Aliquam pretium dapibus orci sed placerat. Nunc in condimentum massa, vitae consectetur ligula. Maecenas consequat in diam ut vulputate. Aenean vel ullamcorper elit.
+						<p>
+							Toimivan ja tehokkaan hyväntekeväisyyden kantavana perustana on vahva sitoutuminen todistepohjaiseen päätöksentekoon - valitsemme toiminnan kohteet ja tuettavat järjestöt mieluiten huolellisesti tehdyn tutkimuksen tuloksena. Arvokysymyksiin pyrimme vastaamaan selkeillä argumenteilla, hyödyntäen etiikan, taloustieteiden ja psykologian alojen osaamista.
 						</p>
+						<p>
+							Käytännössä hyväntekeväisyysjärjestöjen tehokkuus vaihtelee merkittävästi, ja pienelläkin tutkimuksella oman vaikutuksensa voi moninkertaistaa. Esimerkiksi malarian lääkitykseen kehitysmaissa voidaan käyttää tuhansia euroja henkeä kohti, kun taas malariaa tehokkaasti estäviä hyttysverkkoja voitaisiin jakaa samalla hinnalla sadalle henkilölle vuodeksi. <a href="http://www.givingwhatwecan.org/about-us/our-research/the-moral-imperative-towards-cost-effectiveness">Kustannustehokkuus</a> nouseekin yhdeksi tärkeimmistä tekijöistä jonka perusteella toimimme.
+						</p><p>
+							Efektiivinen altruisti ei ole sitoutunut mihinkään tiettyyn kohteeseen, vaan on vapaa valitsemaan kohteensa strategisesti. Tehokkain toiminta edellyttääkin, että olemme avoimia tutkimaan ja muuttamaan kaikkia uskomuksiamme, ja pystymme tarttumaan myös epätavallisiin keinoihin auttaa. Monet efektiiviset altruistit muun muassa <a href="http://blog.givewell.org/2013/06/26/our-take-on-earning-to-give/">tienaavat lahjoittaakseen</a> sen sijaan että tekisivät voittoa tavoittelematonta työtä.
+						</p>
+						<div class="title">
+							<p>Meillä on mahdollisuus tehdä maailmasta parempi. Rationaalisen päätöksenteon avulla voimme moninkertaistaa jälkemme.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -158,8 +165,8 @@
 					<div class="span4">
 						<div class="social">
 						<h4>Blogissa</h4>
-						{% for article in articles if article.category == "blog" %}        				
-							{% if loop.index < 4 %}				
+						{% for article in dates if article.category == "blog" %}        				
+							{% if loop.index < 3 %}				
 								<h5><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h5>
 								<p>{{ article.summary }}</p>
 								{% if not loop.last and loop.index < 3 %}
