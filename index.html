@@ -9,14 +9,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Import CSS -->
-	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="http://www.altruismi.fi/theme/css/main.css" type="text/css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
-	<script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
-	<script src="{{ SITEURL }}/theme/js/jquery.easing.min.js"></script>
-	<script src="{{ SITEURL }}/theme/js/jquery.scrollto.min.js"></script>
-	<script src="{{ SITEURL }}/theme/js/slabtext.min.js"></script>
-	<script src="{{ SITEURL }}/theme/js/jquery.nav.js"></script>
-	<script src="{{ SITEURL }}/theme/js/main.js"></script>
+	<script src="http://www.altruismi.fi/theme/js/jquery.min.js"></script>
+	<script src="http://www.altruismi.fi/theme/js/jquery.easing.min.js"></script>
+	<script src="http://www.altruismi.fi/theme/js/jquery.scrollto.min.js"></script>
+	<script src="http://www.altruismi.fi/theme/js/slabtext.min.js"></script>
+	<script src="http://www.altruismi.fi/theme/js/jquery.nav.js"></script>
+	<script src="http://www.altruismi.fi/theme/js/main.js"></script>
 	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
 		#mc_embed_signup{background:#fff; clear:left; font:14px sans-serif; }
@@ -30,22 +30,13 @@
 	<div class="section bg-color" id="home">
 
 		<div class="container text-center">
-			<img src="{{ SITEURL }}/logo.png" class="logo"></img>
+			<img src="http://www.altruismi.fi/logo.png" class="logo"></img>
 		</div>
 		
 		<div class="slogan">
 			<h1>Effective Altruism Finland</h1>
 		</div>		
-
-		<div class="title">
-			<div id="top-nav" class="">
-				<div id="fixed-nav">				
-					<li><a href="#about">Mitä?</a></li>
-					<li><a href="#jarjestoja">Järjestöjä</a></li>
-					<li><a href="#toimintaa">Toimintaa</a></li>
-				</div>
-			</div>		
-		</div>	
+		</br>
 	</div>
 	<!-- End banner  -->
 	
@@ -132,53 +123,15 @@
 	</div>
 	<!-- End organization section -->
 
-	<!-- Events and contact section -->
+	<!-- Contact section -->
 	<div class="section" id="toimintaa" >
 		<div class="container">
 			<div class="content">
 				<div class="row">
-					<div class="span12">
-						<div class="title">
-							<h2>Toimintaa</h2>
-							<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-						</div>
-					</div>
-					
-					<!-- Upcoming events -->
-					<div class="span8">
-						<h3 align="center">Tapahtumia</h3>
-	
-						{% for article in dates if article.category == "event" %}
-							{% if loop.index < 4 %}
-								<h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.date|strftime('%d.%m.%y') }} - {{ article.title }}</a></h4>
-								<p>{{ article.summary }}</p>		
-								<h6>{{ article.date|strftime('%H:%M') }} <i class="fa fa-location-arrow"></i> {{ article.author }}</h6>
-								{% if not loop.last and loop.index < 3 %}
-										<br>
-								{% endif %}
-							{% endif %}
-						{% endfor %}
+
+						<div class="span4" style="float: right">
 						
-					</div>
-					
-					<!-- Contact -->
-					<div class="span4">
-						<div class="social">
-						<h4>Blogissa</h4>
-						{% for article in dates if article.category == "blog" %}        				
-							{% if loop.index < 3 %}				
-								<h5><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h5>
-								<p>{{ article.summary }}</p>
-								{% if not loop.last and loop.index < 3 %}
-									<br>
-								{% endif %}
-							{% endif %}
-						{% endfor %}	
-						<h4 align="center"><a href="{{ SITEURL }}/archives.html"  
-						title="Arkisto"><i class="fa fa-archive "></i>arkisto</a></h4>		
-						</div>
-						<hr class="grey"/>
-						
+
 						<h4>Ole yhteydessä</h4>
 						<div class="social">
 						<p><a href="mailto:contact@altruismi.fi"><i class="fa fa-envelope"></i> contact@altruismi.fi</a></p>
@@ -200,14 +153,12 @@
 						</div>
 
 						<!--End mc_embed_signup-->
-
 					</div>
-					<!-- End contact -->
 				</div>
 			</div>
 		</div> 
 	</div>
-	<!-- End events and contact Section -->
+
 	
 	<div id="footer">
 		&copy; 2013 Effective Altruism Finland.
